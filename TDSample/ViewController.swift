@@ -12,6 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        DataManager.sharedInstance.getJsonFromUrl(completion: {
+            print("it works")
+        })
         // Do any additional setup after loading the view, typically from a nib.
     }
 

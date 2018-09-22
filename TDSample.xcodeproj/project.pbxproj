@@ -13,6 +13,7 @@
 		9630FD532156F50B00B1D4AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9630FD522156F50B00B1D4AC /* Assets.xcassets */; };
 		9630FD562156F50B00B1D4AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9630FD542156F50B00B1D4AC /* LaunchScreen.storyboard */; };
 		9630FD612156F50B00B1D4AC /* TDSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9630FD602156F50B00B1D4AC /* TDSampleTests.swift */; };
+		9630FD6C2156F73500B1D4AC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9630FD6B2156F73500B1D4AC /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		9630FD5C2156F50B00B1D4AC /* TDSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9630FD602156F50B00B1D4AC /* TDSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDSampleTests.swift; sourceTree = "<group>"; };
 		9630FD622156F50B00B1D4AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9630FD6B2156F73500B1D4AC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				9630FD4B2156F50B00B1D4AC /* AppDelegate.swift */,
 				9630FD4D2156F50B00B1D4AC /* ViewController.swift */,
 				9630FD4F2156F50B00B1D4AC /* Main.storyboard */,
+				9630FD6B2156F73500B1D4AC /* DataManager.swift */,
 				9630FD522156F50B00B1D4AC /* Assets.xcassets */,
 				9630FD542156F50B00B1D4AC /* LaunchScreen.storyboard */,
 				9630FD572156F50B00B1D4AC /* Info.plist */,
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9630FD4E2156F50B00B1D4AC /* ViewController.swift in Sources */,
+				9630FD6C2156F73500B1D4AC /* DataManager.swift in Sources */,
 				9630FD4C2156F50B00B1D4AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
