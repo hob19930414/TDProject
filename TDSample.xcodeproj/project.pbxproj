@@ -16,6 +16,8 @@
 		9630FD6C2156F73500B1D4AC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9630FD6B2156F73500B1D4AC /* DataManager.swift */; };
 		9630FD6F2157C1F700B1D4AC /* TopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9630FD6D2157C1F700B1D4AC /* TopicTableViewCell.swift */; };
 		9630FD702157C1F700B1D4AC /* TopicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9630FD6E2157C1F700B1D4AC /* TopicTableViewCell.xib */; };
+		9630FD742157DFC000B1D4AC /* customWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9630FD732157DFC000B1D4AC /* customWebViewController.swift */; };
+		9630FD762157E0FE00B1D4AC /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9630FD752157E0FE00B1D4AC /* WebKit.framework */; };
 		CD24876FFAD7C20323855D2B /* Pods_TDSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF05FB7A95257DE823EB1C /* Pods_TDSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		9630FD6B2156F73500B1D4AC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		9630FD6D2157C1F700B1D4AC /* TopicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTableViewCell.swift; sourceTree = "<group>"; };
 		9630FD6E2157C1F700B1D4AC /* TopicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicTableViewCell.xib; sourceTree = "<group>"; };
+		9630FD732157DFC000B1D4AC /* customWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customWebViewController.swift; sourceTree = "<group>"; };
+		9630FD752157E0FE00B1D4AC /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		A29DC0C9F5F83EB84ADFCA5E /* Pods_TDSample_TDSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDSample_TDSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEFF05FB7A95257DE823EB1C /* Pods_TDSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9630FD762157E0FE00B1D4AC /* WebKit.framework in Frameworks */,
 				CD24876FFAD7C20323855D2B /* Pods_TDSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +76,7 @@
 		5B50139DD8AA00F5DA0B7C94 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9630FD752157E0FE00B1D4AC /* WebKit.framework */,
 				EEFF05FB7A95257DE823EB1C /* Pods_TDSample.framework */,
 				A29DC0C9F5F83EB84ADFCA5E /* Pods_TDSample_TDSampleTests.framework */,
 			);
@@ -101,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				9630FD4B2156F50B00B1D4AC /* AppDelegate.swift */,
+				9630FD732157DFC000B1D4AC /* customWebViewController.swift */,
 				9630FD4D2156F50B00B1D4AC /* ViewController.swift */,
 				9630FD4F2156F50B00B1D4AC /* Main.storyboard */,
 				9630FD6D2157C1F700B1D4AC /* TopicTableViewCell.swift */,
@@ -278,6 +285,7 @@
 				9630FD6F2157C1F700B1D4AC /* TopicTableViewCell.swift in Sources */,
 				9630FD6C2156F73500B1D4AC /* DataManager.swift in Sources */,
 				9630FD4C2156F50B00B1D4AC /* AppDelegate.swift in Sources */,
+				9630FD742157DFC000B1D4AC /* customWebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

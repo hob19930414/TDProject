@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var topicTableView: UITableView!
+    var transferUrl = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         self.registerNibs()
@@ -48,6 +49,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return 80
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! TopicTableViewCell
+        self.transferUrl = cell.linkString
+        self.performSegue(withIdentifier: "openURLSegue", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let secondViewController = segue.destination as! customWebViewController
+        if segue.identifier == "openURLSegue" {
+            secondViewController.url = self.transferUrl
+        }
+    }
     func registerNibs() {
         let cellNib = UINib(nibName: String(describing: TopicTableViewCell.self), bundle: nil)
         self.topicTableView.register(cellNib,
