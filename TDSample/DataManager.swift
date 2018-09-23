@@ -31,14 +31,14 @@ class DataManager: NSObject {
                 return
             }
             self.jsonData = JSON(data)
-            self.combineTwentyRecords()
+            self.combineRecords(20)
             completion()
             }
         
         task.resume()
     }
     
-    func combineTwentyRecords() {
+    func combineRecords(_ numOfRecords: Int) {
         var count = 0
         topicArray = [[String:String]]()
         if jsonData["RelatedTopics"].exists() {
@@ -49,7 +49,7 @@ class DataManager: NSObject {
                             let recordDic = ["text" : topic["Text"].stringValue , "imageURL" : iconDic["URL"]?.stringValue ?? "", "link" : topic["FirstURL"].stringValue]
                             topicArray.append(recordDic)
                             count += 1
-                            if count >= 20 {
+                            if count >= numOfRecords {
                                 return
                             }
                         }
@@ -60,7 +60,7 @@ class DataManager: NSObject {
                         let recordDic = ["text" : topics["Text"].stringValue , "imageURL" : iconDic["URL"]?.stringValue ?? "", "link" : topics["FirstURL"].stringValue]
                         topicArray.append(recordDic)
                         count += 1
-                        if count >= 20 {
+                        if count >= numOfRecords {
                             return
                         }
                     }
