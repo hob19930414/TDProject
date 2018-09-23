@@ -22,13 +22,14 @@ class TopicTableViewCell: UITableViewCell {
         self.topicLabel.text = topic
         self.linkString = url
         guard icon != ""  else {
+            iconImage.isHidden = true
             return
         }
         let imageUrl = URL(string: icon)
         DispatchQueue.global().async {
             let data = try? Data(contentsOf: imageUrl!)
             DispatchQueue.main.async {
-                self.iconImage.
+                self.iconImage.contentMode = .scaleAspectFit
                 self.iconImage.image = UIImage(data: data!)
             }
         }

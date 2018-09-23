@@ -15,6 +15,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.registerNibs()
         self.topicTableView.delegate = self
         self.topicTableView.dataSource = self
+        self.topicTableView.rowHeight = UITableViewAutomaticDimension
+        self.topicTableView.estimatedRowHeight = 300
         DataManager.sharedInstance.getJsonFromUrl(completion: {
             DispatchQueue.main.async {
                 self.topicTableView.reloadData()
@@ -40,6 +42,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataManager.sharedInstance.topicArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
     }
     
     func registerNibs() {

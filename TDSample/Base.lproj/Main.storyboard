@@ -19,16 +19,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nhM-iN-9gw">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="8" y="28" width="359" height="631"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="nhM-iN-9gw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Am-PM-W2a"/>
-                            <constraint firstItem="nhM-iN-9gw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0Nl-h2-UGg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nhM-iN-9gw" secondAttribute="bottom" id="Jp1-Mc-6FR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nhM-iN-9gw" secondAttribute="trailing" id="VJG-qp-lcj"/>
+                            <constraint firstItem="nhM-iN-9gw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="0Am-PM-W2a"/>
+                            <constraint firstItem="nhM-iN-9gw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="0Nl-h2-UGg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nhM-iN-9gw" secondAttribute="bottom" constant="8" id="Jp1-Mc-6FR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nhM-iN-9gw" secondAttribute="trailing" constant="8" id="VJG-qp-lcj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
